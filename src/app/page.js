@@ -1,4 +1,4 @@
-import CursorEffect from "@/app/components/Cursor";
+import CustomCursor from "@/app/components/Cursor";
 
 export default function Home() {
     return (
@@ -8,7 +8,7 @@ export default function Home() {
                 <div className="bg-[#D5C1B6]"></div>
                 <div className=""></div>
             </div>
-            <CursorEffect />
+            <CustomCursor />
         </div>
     );
 }

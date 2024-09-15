@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import styles from "../css/customCursor.module.css";
 
-const CursorEffect = () => {
+const CustomCursor = () => {
     const cursorRef = useRef(null); // Ref for custom cursor
     const mousePosition = useRef({ x: 0, y: 0 }); // Store mouse position
     const cursorPosition = useRef({ x: 0, y: 0 }); // Store the custom cursor's position
@@ -56,4 +56,4 @@ const CursorEffect = () => {
     );
 };
 
-export default CursorEffect;
+export default CustomCursor;
