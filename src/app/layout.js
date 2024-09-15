@@ -1,5 +1,8 @@
+import { Inter } from "next/font/google";
+
 import localFont from "next/font/local";
 import "./globals.css";
+import CustomCursor from "@/app/components/Cursor";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -11,6 +14,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Leandro Bernal | Full Stack Web Developer",
@@ -20,9 +24,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.className} cursor-none bg-black antialiased`}>
+        <CustomCursor />
         {children}
       </body>
     </html>
