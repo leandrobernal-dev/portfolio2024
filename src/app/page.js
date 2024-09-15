@@ -48,7 +48,9 @@ export default function Home() {
 
           <div className="grid h-fit w-full grid-cols-2 gap-2">
             <div className="flex flex-col gap-4">
-              <h2 className="text-6xl font-black">Some of My Projects.</h2>
+              <h2 className="text-4xl font-black sm:text-6xl">
+                Some of My Projects.
+              </h2>
             </div>
             <div className="aspect-square bg-zinc-900"></div>
             <div className="aspect-square bg-zinc-900"></div>
