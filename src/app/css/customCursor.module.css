@@ -1,0 +1,10 @@
+/* Custom Cursor */
+.cursor {
+    background-color: #f8e3d3;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference; /* Invert effect */
+    z-index: 100;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
