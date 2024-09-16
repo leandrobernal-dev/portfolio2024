@@ -40,13 +40,18 @@ export default function Home() {
             <Nav />
           </div>
           <div className="flex items-center">
-            <div className="my-8 flex gap-12">
+            <div className="my-8 flex items-center gap-12">
+              <img
+                className="h-12 w-12 rounded-full"
+                src="https://avatars.githubusercontent.com/u/108369489?v=4"
+                alt=""
+              />
               {SocialLinks.map(({ name, url, icon }) => (
                 <Link
                   key={name}
                   href={url}
                   target="_blank"
-                  className="flex items-center gap-4 text-zinc-400 transition-colors hover:text-white"
+                  className="flex items-center gap-4 text-sm text-zinc-400 transition-colors hover:text-white"
                 >
                   {icon}
                   <p>{name} </p>
