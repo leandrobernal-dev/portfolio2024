@@ -82,7 +82,7 @@ export default function Home() {
           >
             <h3 className="font-bold text-white md:hidden">EXPERIENCE</h3>
 
-            <div className="flex justify-between gap-4 bg-zinc-900 p-8 transition-transform duration-300 ease-in-out hover:scale-110">
+            <div className="flex justify-between gap-4 bg-zinc-900 p-2 transition-transform duration-300 ease-in-out hover:scale-110 md:p-8">
               <span className="min-w-fit text-zinc-400">2022 — Present</span>
               <div>
                 <h3 className="text-lg font-bold">
@@ -114,13 +114,68 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <h2 className="text-4xl font-black sm:text-6xl">My Projects.</h2>
             </div>
-            {[0, 1, 2].map((item, index) => (
+            {[0].map((item, index) => (
               <div
                 key={item + index}
                 className="aspect-square bg-zinc-900 transition-transform duration-300 hover:scale-110 hover:shadow-lg"
               ></div>
             ))}
           </div>
+
+          <footer className="max-w-md pb-16 text-sm text-zinc-500 sm:pb-0">
+            <p>
+              Design Inspired by{" "}
+              <a
+                href="https://brittanychiang.com/"
+                className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Figma (opens in a new tab)"
+              >
+                Brittany Chiang
+              </a>{" "}
+              and coded in{" "}
+              <a
+                href="https://code.visualstudio.com/"
+                className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Visual Studio Code (opens in a new tab)"
+              >
+                Visual Studio Code
+              </a>{" "}
+              by yours truly. Built with{" "}
+              <a
+                href="https://nextjs.org/"
+                className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Next.js (opens in a new tab)"
+              >
+                Next.js
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://tailwindcss.com/"
+                className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Tailwind CSS (opens in a new tab)"
+              >
+                Tailwind CSS
+              </a>
+              , deployed with{" "}
+              <a
+                href="https://vercel.com/"
+                className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Vercel (opens in a new tab)"
+              >
+                Vercel.
+              </a>
+            </p>
+          </footer>
         </main>
       </div>
     </div>
