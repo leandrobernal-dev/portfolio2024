@@ -23,8 +23,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} cursor-none bg-black antialiased`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="cursor-none scroll-smooth"
+    >
+      <body
+        className={`${inter.className} bg-zinc-950 antialiased`}
+        suppressHydrationWarning
+      >
         <CustomCursor />
         {children}
       </body>
