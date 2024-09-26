@@ -60,7 +60,7 @@ export default function Home() {
               ))}
               <a
                 href="mailto:bernalleandro.dev@gmail.com"
-                className="rounded-full bg-white p-2 font-semibold text-black transition-transform duration-300 ease-in-out hover:scale-105"
+                className="rounded-full bg-white p-2 px-4 font-semibold text-black transition-transform duration-300 ease-in-out hover:scale-105"
               >
                 Contact me
               </a>
