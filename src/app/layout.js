@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 
 import localFont from "next/font/local";
 import "./globals.css";
-import CustomCursor from "@/app/components/Cursor";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,16 +22,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className="cursor-none scroll-smooth"
-    >
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
-        className={`${inter.className} bg-zinc-950 antialiased`}
+        className={`${inter.className} bg-zinc-900 antialiased`}
         suppressHydrationWarning
       >
-        <CustomCursor />
         {children}
       </body>
     </html>
