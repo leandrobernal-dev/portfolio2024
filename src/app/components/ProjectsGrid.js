@@ -1,6 +1,7 @@
 "use client";
 
 import { Launch } from "@mui/icons-material";
+import Image from "next/image";
 import { useState } from "react";
 
 const projects = [
@@ -10,7 +11,7 @@ const projects = [
     shortDescription: "Anonymous Instagram Stories Viewer",
     description:
       "View Instagram stories anonymously with this Next.js web application. No login required.",
-    imageUrl: "/placeholder.svg?height=300&width=300",
+    imageUrl: "/instaviewer.jpg",
     githubUrl:
       "https://github.com/leandrobernal-dev/anonymous-insta_stories-viewer",
     techUsed: [
@@ -27,7 +28,7 @@ const projects = [
     shortDescription: "Reference Canvas board for Designers",
     description:
       "A canvas for designers to put their image references on to. Similar to Pureref, but on the browser.",
-    imageUrl: "/placeholder.svg?height=300&width=300",
+    imageUrl: "/refonline.jpg",
     githubUrl: "https://github.com/leandrobernal-dev/ref-ol",
     techUsed: ["Next.js", "Tailwind CSS", "Javascript", "MongoDB", "AWS S3"],
   },
@@ -37,18 +38,17 @@ const projects = [
     shortDescription: "Chat Meme Generator",
     description:
       "Generate realistic funny chat screenshots from popular messaging platforms like WhatsApp, iMessage, and Facebook Messenger.",
-    imageUrl: "/placeholder.svg?height=300&width=300",
+    imageUrl: "/fakepost.jpg",
     githubUrl: "https://github.com/leandrobernal-dev/fakepost",
     techUsed: ["Next.js", "Tailwind CSS", "Javascript"],
   },
   {
     id: 4,
     title: "Portfolio Website",
-    shortDescription:
-      "My 2024 Portfolio Website made with Next.js and Tailwind CSS.",
+    shortDescription: "My 2024 Portfolio Website",
     description:
       "My 2024 Portfolio Website made with Next.js and Tailwind CSS.",
-    imageUrl: "/placeholder.svg?height=300&width=300",
+    imageUrl: "/portfolio.jpg",
     githubUrl: "https://github.com/leandrobernal-dev/portfolio2024",
     techUsed: ["Next.js", "Tailwind CSS", "Javascript"],
   },
@@ -63,9 +63,9 @@ export default function Projects() {
         {projects.map((project, index) => (
           <li
             key={index}
-            className={`flex flex-col justify-between gap-8 bg-zinc-800 p-6 transition-all duration-300 md:aspect-square md:hover:scale-110 ${
+            className={`group flex flex-col justify-between bg-zinc-800 p-6 transition-all duration-300 md:aspect-square md:hover:scale-110 ${
               index % 2 === 0 ? "md:-mt-12" : ""
-            } ${hoveredId !== null && hoveredId !== project.id ? "md:opacity-30" : "md:opacity-100"}`}
+            } ${hoveredId !== null && hoveredId !== project.id ? "md:opacity-30 md:blur-sm" : ""}`}
             onMouseEnter={() => setHoveredId(project.id)}
             onMouseLeave={() => setHoveredId(null)}
           >
@@ -73,7 +73,7 @@ export default function Projects() {
               <h4 className="text-2xl font-black">
                 <a
                   target="_blank"
-                  className="flex gap-1"
+                  className="flex gap-1 underline underline-offset-2"
                   href={project.githubUrl}
                 >
                   {project.title}
@@ -81,15 +81,28 @@ export default function Projects() {
                 </a>
               </h4>
             </header>
-            <div>
-              <p className="text-sm">{project.shortDescription}</p>
-              <p className="text-sm text-zinc-500">{project.description}</p>
+            <div className="relative">
+              <Image
+                width={1000}
+                height={1000}
+                quality={100}
+                priority
+                className="w-full"
+                src={project.imageUrl}
+                alt={project.title + " Image"}
+              />
+              <div className="absolute inset-0 overflow-hidden bg-gradient-to-b from-black to-black/50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                <div className="absolute inset-x-0 bottom-0 top-0 h-full w-full translate-y-full transform p-4 text-center text-white transition-transform duration-300 ease-out group-hover:translate-y-1.5">
+                  <p className="font-bold">{project.shortDescription}</p>
+                  <p className="text-sm">{project.description}</p>
+                </div>
+              </div>
             </div>
             <ul className="flex flex-wrap items-center gap-1">
               {project.techUsed.map((tech) => (
                 <li
                   key={tech}
-                  className="rounded-full border-zinc-700 bg-zinc-800 p-1 px-2 font-mono text-sm text-white shadow-md shadow-zinc-950/30"
+                  className="rounded-full border-zinc-700 bg-zinc-800 p-1 px-2 font-mono text-xs text-white shadow-md shadow-zinc-950/30"
                 >
                   {tech}
                 </li>
