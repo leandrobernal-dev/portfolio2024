@@ -11,9 +11,7 @@ export default function ExperienceCards() {
           2022 — Present
         </time>
         <div>
-          <h3 className="text-lg font-bold">
-            Full Stack Engineer | Freelance - Fiverr
-          </h3>
+          <h3 className="text-lg font-bold">Full Stack Engineer | Freelance</h3>
           <p className="mt-2 text-sm leading-normal text-zinc-400">
             I worked with clients to design and build responsive web
             applications from concept to deployment. I utilized front-end
