@@ -12,21 +12,29 @@ export default function ExperienceCards() {
         </time>
         <div>
           <h3 className="text-lg font-bold">Full Stack Engineer | Freelance</h3>
-          <p className="mt-2 text-sm leading-normal text-zinc-400">
-            I worked with clients to design and build responsive web
-            applications from concept to deployment. I utilized front-end
-            technologies like HTML, CSS, JavaScript, and React, alongside
-            back-end tools such as Node.js, Express, and databases like MySQL
-            and MongoDB. I focused on delivering seamless user experiences,
-            implementing API integrations, and optimizing performance, while
-            ensuring scalability and security. My work consistently provided
-            clients with high-quality, reliable digital solutions tailored to
-            their business goals.
-          </p>
-          <p className="mt-2 text-sm leading-normal text-zinc-400">
-            I also learned Google Cloud Platform along the way. Helped clients
-            automate their tasks using Google Apps Script.
-          </p>
+
+          <ul className="ml-8 mt-2 list-disc leading-normal text-zinc-400">
+            <li>
+              Designed and developed responsive web applications for clients,
+              managing both front-end and back-end processes.
+            </li>
+            <li>
+              Automated workflows and integrated Google Suite solutions to
+              enhance productivity.
+            </li>
+            <li>
+              Built and maintained custom portfolio and blog websites for
+              businesses and individuals.
+            </li>
+            <li>
+              Developed, optimized, and maintained web applications, ensuring
+              performance and scalability.
+            </li>
+            <li>
+              Diagnosed and fixed bugs, while continuously implementing new
+              features to improve user experience.
+            </li>
+          </ul>
         </div>
       </article>
     </section>
