@@ -59,11 +59,11 @@ export default function Projects() {
     <section className="section mb-24 mt-12 flex flex-col gap-2" id="Projects">
       <h3 className="font-bold text-white md:hidden">MY PROJECTS</h3>
 
-      <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
+      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
         {projects.map((project, index) => (
           <li
             key={index}
-            className={`group flex flex-col justify-between bg-zinc-800 p-6 transition-all duration-300 md:aspect-square md:hover:scale-110 ${
+            className={`group flex flex-col justify-between gap-8 bg-zinc-800 p-6 transition-all duration-300 md:aspect-square md:gap-0 md:hover:scale-110 ${
               index % 2 === 0 ? "md:-mt-12" : ""
             } ${hoveredId !== null && hoveredId !== project.id ? "md:opacity-30 md:blur-sm" : ""}`}
             onMouseEnter={() => setHoveredId(project.id)}
