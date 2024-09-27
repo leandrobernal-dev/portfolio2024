@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const navSections = ["About", "Experience", "Projects"];
+const navSections = ["About", "Projects", "Experience"];
 
 export default function Nav() {
   const [activeSection, setActiveSection] = useState(navSections[0]);
@@ -20,7 +20,7 @@ export default function Nav() {
           }
         });
       },
-      { threshold: 0.5 }, // Trigger when 50% of the section is visible
+      { threshold: 0.6 }, // Trigger when 50% of the section is visible
     );
 
     // Observe each section

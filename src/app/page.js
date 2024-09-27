@@ -12,11 +12,8 @@ export default function Home() {
 
         <main className="flex flex-col items-center pt-24 lg:w-3/4 lg:py-24">
           <About />
-
-          <ExperienceCards />
-
           <ProjectGrid />
-
+          <ExperienceCards />
           <Footer />
         </main>
       </div>
