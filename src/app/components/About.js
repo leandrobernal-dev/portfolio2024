@@ -10,8 +10,9 @@ export default function About() {
       </h2>
       <p>
         I started out curious about robotics and computers, but eventually fell
-        in love with web development. I've been freelancing for 3 years now,
-        building and maintaining websites and web applications for my clients.
+        in love with web development. I've been freelancing for about 3 years
+        now, building and maintaining websites and web applications for my
+        clients.
       </p>
       <br />
       <p>
