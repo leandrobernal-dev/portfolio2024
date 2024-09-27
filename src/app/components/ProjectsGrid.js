@@ -102,7 +102,7 @@ export default function Projects() {
               {project.techUsed.map((tech) => (
                 <li
                   key={tech}
-                  className="rounded-full border-zinc-700 bg-zinc-800 p-1 px-2 font-mono text-xs text-white shadow-md shadow-zinc-950/30"
+                  className="rounded-full bg-zinc-900 p-1 px-2 font-mono text-xs text-white shadow-md"
                 >
                   {tech}
                 </li>
