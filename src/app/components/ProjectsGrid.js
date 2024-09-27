@@ -56,7 +56,7 @@ const projects = [
 export default function Projects() {
   const [hoveredId, setHoveredId] = useState(null);
   return (
-    <section className="section my-12 flex flex-col gap-2" id="Projects">
+    <section className="section mb-24 mt-12 flex flex-col gap-2" id="Projects">
       <h3 className="font-bold text-white md:hidden">MY PROJECTS</h3>
 
       <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
