@@ -15,11 +15,12 @@ const projects = [
     githubUrl:
       "https://github.com/leandrobernal-dev/anonymous-insta_stories-viewer",
     techUsed: [
-      "Next.js",
-      "Tailwind CSS",
-      "Javascript",
       "Supabase",
       "Puppeteer",
+      "Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Javascript",
     ],
   },
   {
@@ -30,7 +31,14 @@ const projects = [
       "A canvas for designers to put their image references on to. Similar to Pureref, but on the browser.",
     imageUrl: "/refonline.jpg",
     githubUrl: "https://github.com/leandrobernal-dev/ref-ol",
-    techUsed: ["Next.js", "Tailwind CSS", "Javascript", "MongoDB", "AWS S3"],
+    techUsed: [
+      "MongoDB",
+      "AWS S3",
+      "Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Javascript",
+    ],
   },
   {
     id: 3,
