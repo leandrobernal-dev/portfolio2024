@@ -34,6 +34,7 @@ const projects = [
     techUsed: [
       "MongoDB",
       "AWS S3",
+      "NextAuth",
       "Next.js",
       "Node.js",
       "Tailwind CSS",
