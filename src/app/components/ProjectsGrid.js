@@ -1,6 +1,6 @@
 "use client";
 
-import { Launch } from "@mui/icons-material";
+import { GitHub, Launch } from "@mui/icons-material";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -14,6 +14,7 @@ const projects = [
     imageUrl: "/instaviewer.jpg",
     githubUrl:
       "https://github.com/leandrobernal-dev/anonymous-insta_stories-viewer",
+    demoUrl: "https://anonymous-insta-stories-viewer.vercel.app/",
     techUsed: [
       "Supabase",
       "Puppeteer",
@@ -31,6 +32,7 @@ const projects = [
       "A canvas for designers to put their image references on to. Similar to Pureref, but on the browser.",
     imageUrl: "/refonline.jpg",
     githubUrl: "https://github.com/leandrobernal-dev/ref-ol",
+    demoUrl: "https://refonline.vercel.app/",
     techUsed: [
       "MongoDB",
       "AWS S3",
@@ -49,6 +51,7 @@ const projects = [
       "Generate realistic funny chat screenshots from popular messaging platforms like WhatsApp, iMessage, and Facebook Messenger.",
     imageUrl: "/fakepost.jpg",
     githubUrl: "https://github.com/leandrobernal-dev/fakepost",
+    demoUrl: "https://fakepost.vercel.app/create",
     techUsed: ["Next.js", "Tailwind CSS", "Javascript"],
   },
   {
@@ -59,6 +62,7 @@ const projects = [
       "My 2024 Portfolio Website made with Next.js and Tailwind CSS.",
     imageUrl: "/portfolio.jpg",
     githubUrl: "https://github.com/leandrobernal-dev/portfolio2024",
+    demoUrl: "https://bernalleandro.com/",
     techUsed: ["Next.js", "Tailwind CSS", "Javascript"],
   },
 ];
@@ -78,17 +82,24 @@ export default function Projects() {
             onMouseEnter={() => setHoveredId(project.id)}
             onMouseLeave={() => setHoveredId(null)}
           >
-            <header>
+            <header className="flex justify-between">
               <h4 className="text-2xl font-black">
                 <a
                   target="_blank"
-                  className="flex gap-1 underline underline-offset-2"
-                  href={project.githubUrl}
+                  className="flex gap-1 underline underline-offset-2 transition-colors duration-300 hover:text-zinc-400"
+                  href={project.demoUrl}
                 >
                   {project.title}
                   <Launch fontSize="small" />
                 </a>
               </h4>
+              <a
+                target="_blank"
+                className="flex gap-1 underline underline-offset-2 transition-colors duration-300 hover:text-zinc-400"
+                href={project.githubUrl}
+              >
+                <GitHub fontSize="small" />
+              </a>
             </header>
             <div className="relative">
               <Image
