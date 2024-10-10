@@ -53,7 +53,7 @@ export default function Header() {
               <Launch fontSize="small" />
             </Link>
           ))}
-          <a
+          {/* <a
             href="mailto:bernalleandro.dev@gmail.com"
             className="duration-400 relative inline-flex h-12 overflow-hidden rounded-full p-[1px] transition hover:scale-110 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           >
@@ -62,7 +62,7 @@ export default function Header() {
               <Email fontSize="small" className="mr-1" />
               Email me
             </span>
-          </a>
+          </a> */}
         </div>
       </div>
     </header>
