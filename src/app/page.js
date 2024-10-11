@@ -3,6 +3,7 @@ import ExperienceCards from "@/app/components/ExperienceCards";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import ProjectGrid from "@/app/components/ProjectsGrid";
+import TechStack from "@/app/components/TechStack";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <About />
           <ProjectGrid />
           <ExperienceCards />
+          <TechStack />
           <Footer />
         </main>
       </div>
