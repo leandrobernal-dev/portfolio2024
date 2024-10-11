@@ -11,7 +11,7 @@ export default function Home() {
       <div className="w-full max-w-screen-xl px-6 lg:flex lg:justify-between lg:gap-6">
         <Header />
 
-        <main className="flex flex-col items-center pt-24 lg:w-3/4 lg:py-24">
+        <main className="space-y-10 pt-16 md:space-y-24 lg:w-3/4 lg:py-24">
           <About />
           <ProjectGrid />
           <ExperienceCards />

@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section
-      className="section mb-24 leading-relaxed text-zinc-400"
+      className="section leading-relaxed text-zinc-400"
       id="About"
       aria-labelledby="about-title"
     >

@@ -39,7 +39,7 @@ export default function TechStack() {
 
   return (
     <section
-      className="section relative mb-24 flex w-full flex-col gap-2"
+      className="section relative flex w-full flex-col gap-2"
       id="TechStack"
     >
       <h3 className="font-bold text-white md:hidden">TECH STACK I USE</h3>

@@ -1,9 +1,6 @@
 export default function ExperienceCards() {
   return (
-    <section
-      className="section relative mb-24 flex flex-col gap-2"
-      id="Experience"
-    >
+    <section className="section relative flex flex-col gap-2" id="Experience">
       <h3 className="font-bold text-white md:hidden">EXPERIENCE</h3>
 
       <article className="flex flex-col justify-between gap-4 bg-zinc-800 p-8 transition-transform duration-300 ease-in-out sm:flex-row md:p-8 md:hover:scale-110">
