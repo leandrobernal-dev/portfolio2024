@@ -39,15 +39,15 @@ export default function Nav() {
           <li key={item + index}>
             <a className="group flex items-center py-3" href={`#${item}`}>
               <span
-                className={`${activeSection === item ? "text-zinc-200" : "text-zinc-600"} mr-4 group-hover:text-zinc-200`}
+                className={`${activeSection === item ? "text-accent" : "text-zinc-600"} group-hover:text-accent mr-4`}
               >
                 0{index + 1}
               </span>
               <span
-                className={`${activeSection === item ? "w-16 bg-zinc-200" : "w-8 bg-zinc-600"} mr-4 h-px transition-all group-hover:w-16 group-hover:bg-zinc-200 group-focus-visible:w-16 group-focus-visible:bg-zinc-200 motion-reduce:transition-none`}
+                className={`${activeSection === item ? "bg-accent w-16" : "w-8 bg-zinc-600"} group-hover:bg-accent group-focus-visible:bg-accent mr-4 h-px transition-all group-hover:w-16 group-focus-visible:w-16 motion-reduce:transition-none`}
               ></span>
               <span
-                className={`${activeSection === item ? "text-zinc-200" : "text-zinc-600"} nav-text text-xs font-bold uppercase tracking-widest group-hover:text-zinc-200 group-focus-visible:text-zinc-200`}
+                className={`${activeSection === item ? "text-accent" : "text-zinc-600"} nav-text group-hover:text-accent group-focus-visible:text-accent text-xs font-bold uppercase tracking-widest`}
               >
                 {item}
               </span>
