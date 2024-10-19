@@ -47,7 +47,7 @@ export default function TechStack() {
       <div className="grid grid-cols-4 justify-items-center gap-4 sm:grid-cols-8">
         {technologies.map((tech) => (
           <div key={tech.name} className="flex flex-col items-center">
-            <tech.icon className={`h-8 w-8 ${tech.color} mb-2`} />
+            <tech.icon className={`w-6 ${tech.color} mb-2`} />
             <span className="text-center text-xs text-gray-600 dark:text-gray-400">
               {tech.name}
             </span>
