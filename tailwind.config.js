@@ -21,6 +21,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        accent: "#22d3ee",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
