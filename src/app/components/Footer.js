@@ -5,7 +5,7 @@ export default function Footer() {
         Design Inspired by{" "}
         <a
           href="https://brittanychiang.com/"
-          className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+          className="transition-color hover:text-accent focus-visible:text-accent font-medium text-zinc-400 duration-200 ease-in-out"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="Figma (opens in a new tab)"
@@ -15,7 +15,7 @@ export default function Footer() {
         and coded in{" "}
         <a
           href="https://code.visualstudio.com/"
-          className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+          className="transition-color hover:text-accent focus-visible:text-accent font-medium text-zinc-400 duration-200 ease-in-out"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="Visual Studio Code (opens in a new tab)"
@@ -25,7 +25,7 @@ export default function Footer() {
         by yours truly. Built with{" "}
         <a
           href="https://nextjs.org/"
-          className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+          className="transition-color hover:text-accent focus-visible:text-accent font-medium text-zinc-400 duration-200 ease-in-out"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="Next.js (opens in a new tab)"
@@ -35,7 +35,7 @@ export default function Footer() {
         and{" "}
         <a
           href="https://tailwindcss.com/"
-          className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+          className="transition-color hover:text-accent focus-visible:text-accent font-medium text-zinc-400 duration-200 ease-in-out"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="Tailwind CSS (opens in a new tab)"
@@ -45,7 +45,7 @@ export default function Footer() {
         , deployed with{" "}
         <a
           href="https://vercel.com/"
-          className="font-medium text-zinc-400 hover:text-zinc-300 focus-visible:text-zinc-300"
+          className="transition-color hover:text-accent focus-visible:text-accent font-medium text-zinc-400 duration-200 ease-in-out"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="Vercel (opens in a new tab)"
