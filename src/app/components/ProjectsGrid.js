@@ -86,7 +86,7 @@ export default function Projects() {
               <h4 className="text-2xl font-black">
                 <a
                   target="_blank"
-                  className="flex gap-1 underline underline-offset-2 transition-colors duration-300 hover:text-zinc-400"
+                  className="hover:text-accent flex gap-1 underline underline-offset-2 transition-colors duration-300"
                   href={project.demoUrl}
                 >
                   {project.title}
@@ -95,7 +95,7 @@ export default function Projects() {
               </h4>
               <a
                 target="_blank"
-                className="flex gap-1 underline underline-offset-2 transition-colors duration-300 hover:text-zinc-400"
+                className="hover:text-accent flex gap-1 underline underline-offset-2 transition-colors duration-300"
                 href={project.githubUrl}
               >
                 <GitHub fontSize="small" />

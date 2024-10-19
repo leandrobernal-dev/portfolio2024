@@ -52,7 +52,7 @@ export default function Header() {
               key={name}
               href={url}
               target="_blank"
-              className="flex items-center gap-3 text-sm transition-colors hover:text-zinc-400"
+              className="hover:text-accent flex items-center gap-3 text-sm transition-colors"
             >
               {icon}
               <p>{name} </p>
