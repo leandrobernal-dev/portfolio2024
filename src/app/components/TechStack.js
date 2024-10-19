@@ -38,10 +38,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section
-      className="section relative flex w-full flex-col gap-2"
-      id="TechStack"
-    >
+    <section className="relative flex w-full flex-col gap-2" id="TechStack">
       <h3 className="font-bold text-white md:hidden">TECH STACK I USE</h3>
 
       <div className="grid grid-cols-4 justify-items-center gap-4 sm:grid-cols-8">
