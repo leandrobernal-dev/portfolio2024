@@ -40,19 +40,14 @@ export default function Header() {
 
         <Nav />
       </div>
-      <div className="flex w-full items-center pr-4">
-        <div className="my-8 flex w-full gap-4 text-white md:justify-between md:gap-0">
-          <img
-            className="h-12 w-12 rounded-full"
-            src="https://avatars.githubusercontent.com/u/108369489?v=4"
-            alt=""
-          />
+      <div className="flex w-full items-center">
+        <div className="my-8 flex gap-4 text-white md:justify-between">
           {SocialLinks.map(({ name, url, icon }) => (
             <Link
               key={name}
               href={url}
               target="_blank"
-              className="hover:text-accent flex items-center gap-3 text-sm transition-colors"
+              className="hover:text-accent flex items-center gap-3 text-sm transition-colors duration-200"
             >
               {icon}
               <p>{name} </p>
@@ -62,7 +57,7 @@ export default function Header() {
           <a
             target="_blank"
             href="https://www.upwork.com/freelancers/~01a704d9fb8d180d89"
-            className="flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-zinc-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] p-2 px-4 font-medium text-zinc-400 transition duration-300 hover:scale-110 focus:outline-none"
+            className="hover:text-accent flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-zinc-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] p-2 px-4 text-sm font-medium text-zinc-400 transition duration-300 hover:scale-110 focus:outline-none"
           >
             <img
               src="https://www.upwork.com/favicon.ico"
@@ -72,17 +67,6 @@ export default function Header() {
             Let's Work Together
             <OpenInNew className="h-4 w-4" />
           </a>
-
-          {/* <a
-            href="mailto:bernalleandro.dev@gmail.com"
-            className="duration-400 relative inline-flex h-12 overflow-hidden rounded-full p-[1px] transition hover:scale-110 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-          >
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-              <Email fontSize="small" className="mr-1" />
-              Email me
-            </span>
-          </a> */}
         </div>
       </div>
     </header>
