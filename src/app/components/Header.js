@@ -16,19 +16,25 @@ export default function Header() {
       <div className="">
         <div>
           <h1 className="text-4xl font-black">
-            <Link href={"/"}>Leandro Bernal.</Link>
+            <Link href={"/"}>
+              Leandro Bernal<span className="text-accent">.</span>
+            </Link>
           </h1>
           <br />
           <h2 className="text-xl font-light">Full Stack Software Engineer</h2>
           <h3 className="text-xl font-light">
-            <strong>|</strong> Web Developer
+            <strong>|</strong>{" "}
+            <span className="text-accent">Web Developer</span>
           </h3>
           <br />
         </div>
         <div>
           <p className="max-w-sm text-zinc-400">
-            I build responsive, scalable, and user-focused web applications with
-            modern full-stack technologies.
+            I build <strong className="text-accent">responsive</strong>,{" "}
+            <strong className="text-accent">scalable</strong>, and
+            <strong className="text-accent"> user-focused</strong> web
+            applications with <strong className="text-accent">modern</strong>{" "}
+            full-stack technologies.
           </p>
         </div>
 
@@ -56,7 +62,7 @@ export default function Header() {
           <a
             target="_blank"
             href="https://www.upwork.com/freelancers/~01a704d9fb8d180d89"
-            className="animate-shimmer flex h-12 items-center justify-center gap-2 rounded-full border border-zinc-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] p-2 px-4 font-medium text-zinc-400 transition duration-300 hover:scale-110 focus:outline-none"
+            className="flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-zinc-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] p-2 px-4 font-medium text-zinc-400 transition duration-300 hover:scale-110 focus:outline-none"
           >
             <img
               src="https://www.upwork.com/favicon.ico"
