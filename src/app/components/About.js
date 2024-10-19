@@ -10,23 +10,25 @@ export default function About() {
       </h2>
       <article className="space-y-4">
         <p>
-          I started out curious about robotics and computers, but eventually
-          fell in love with web development. I've been freelancing for about 3
-          years now, building and maintaining websites and web applications for
-          my clients.
+          I started out curious about <strong>robotics</strong> and{" "}
+          <strong>computers</strong>, but eventually fell in love with{" "}
+          <strong>web development</strong>. I've been freelancing for about{" "}
+          <strong>3 years</strong> now, building and maintaining websites and
+          web applications for my clients.
         </p>
         <div>
           <p>
-            My go-to framework for both front-end and full-stack applications is
-            Next.js. When I start building a new personal project, Next.js helps
-            me quickly and efficiently bring ideas to life. It allows for rapid
-            testing and iteration, making it perfect for exploring new concepts
-            and refining them along the way.
+            My go-to framework for both front-end and full-stack applications is{" "}
+            <strong>Next.js</strong>. When I start building a new personal
+            project, Next.js helps me quickly and efficiently bring ideas to
+            life. It allows for rapid testing and iteration, making it perfect
+            for exploring new concepts and refining them along the way.
           </p>
         </div>
         <p>
-          In my spare time, I enjoy 3D printing and modeling, or playing
-          fingerstyle on my acoustic guitar🎸.
+          In my spare time, I enjoy <strong>3D printing</strong> and{" "}
+          <strong>modeling</strong>, or play <strong>fingerstyle</strong> on my{" "}
+          <strong>acoustic guitar🎸</strong>.
         </p>
       </article>
     </section>
