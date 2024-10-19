@@ -13,9 +13,9 @@ export default function Home() {
 
         <main className="space-y-10 pt-16 md:space-y-24 lg:w-3/4 lg:py-24">
           <About />
+          <TechStack />
           <ProjectGrid />
           <ExperienceCards />
-          <TechStack />
           <Footer />
         </main>
       </div>
