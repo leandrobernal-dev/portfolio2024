@@ -26,7 +26,7 @@ export default function Header() {
           <br />
         </div>
         <div>
-          <p className="text-zinc-400">
+          <p className="max-w-sm text-zinc-400">
             I build responsive, scalable, and user-focused web applications with
             modern full-stack technologies.
           </p>
