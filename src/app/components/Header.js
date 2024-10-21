@@ -51,7 +51,7 @@ export default function Header() {
             >
               {icon}
               <p>{name} </p>
-              <OpenInNew className="h-4 w-4" />
+              <OpenInNew fontSize="16px" />
             </Link>
           ))}
           <a
@@ -65,7 +65,7 @@ export default function Header() {
               alt=""
             />
             Let's Work Together
-            <OpenInNew className="h-4 w-4" />
+            <OpenInNew fontSize="16px" />
           </a>
         </div>
       </div>
