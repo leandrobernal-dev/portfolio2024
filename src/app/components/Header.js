@@ -21,10 +21,9 @@ export default function Header() {
             </Link>
           </h1>
           <br />
-          <h2 className="text-xl font-light">Full Stack Software Engineer</h2>
-          <h3 className="text-xl font-light">
-            <strong>|</strong>{" "}
-            <span className="text-accent">Web Developer</span>
+          <h2 className="text-xl font-semibold">Full Stack Web Developer</h2>
+          <h3 className="text-sm">
+            <strong>|</strong> <span className="text-accent">Philippines</span>
           </h3>
           <br />
         </div>
@@ -47,7 +46,7 @@ export default function Header() {
               key={name}
               href={url}
               target="_blank"
-              className="hover:text-accent flex items-center gap-3 text-sm transition-colors duration-200"
+              className="flex items-center gap-3 text-sm transition-colors duration-200 hover:text-accent"
             >
               {icon}
               <p>{name} </p>
@@ -57,7 +56,7 @@ export default function Header() {
           <a
             target="_blank"
             href="https://www.upwork.com/freelancers/~01a704d9fb8d180d89"
-            className="hover:text-accent flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-zinc-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] p-2 px-4 text-sm font-medium text-zinc-400 transition duration-300 hover:scale-110 focus:outline-none"
+            className="flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-zinc-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] p-2 px-4 text-sm font-medium text-zinc-400 transition duration-300 hover:scale-110 hover:text-accent focus:outline-none"
           >
             <img
               src="https://www.upwork.com/favicon.ico"
