@@ -1,6 +1,6 @@
 import Nav from "@/app/components/Nav";
 import Link from "next/link";
-import { OpenInNew } from "@mui/icons-material";
+import { OpenInNew, Place } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const SocialLinks = [
@@ -22,9 +22,12 @@ export default function Header() {
           </h1>
           <br />
           <h2 className="text-xl font-semibold">Full Stack Web Developer</h2>
-          <h3 className="text-sm">
-            <strong>|</strong> <span className="text-accent">Philippines</span>
-          </h3>
+          <div className="flex items-end">
+            <strong>
+              <Place fontSize="small" className="p-0" />
+            </strong>
+            <span className="text-sm text-accent">Philippines</span>
+          </div>
           <br />
         </div>
         <div>
