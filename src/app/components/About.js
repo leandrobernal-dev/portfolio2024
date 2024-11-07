@@ -5,8 +5,8 @@ export default function About() {
       id="About"
       aria-labelledby="about-title"
     >
-      <h2 className="font-bold text-white md:hidden" id="about-title">
-        About
+      <h2 className="mb-2 font-bold text-white" id="about-title">
+        ABOUT
       </h2>
       <article className="space-y-4">
         <p>

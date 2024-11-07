@@ -70,9 +70,9 @@ export default function Projects() {
   const [hoveredId, setHoveredId] = useState(null);
   return (
     <section className="section mt-12 flex flex-col gap-2" id="Projects">
-      <h3 className="font-bold text-white md:hidden">MY PROJECTS</h3>
+      <h3 className="mb-2 font-bold text-white">MY PROJECTS</h3>
 
-      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-12">
         {projects.map((project, index) => (
           <li
             key={index}
@@ -86,7 +86,7 @@ export default function Projects() {
               <h4 className="text-2xl font-black">
                 <a
                   target="_blank"
-                  className="hover:text-accent flex gap-1 underline underline-offset-2 transition-colors duration-300"
+                  className="flex gap-1 underline underline-offset-2 transition-colors duration-300 hover:text-accent"
                   href={project.demoUrl}
                 >
                   {project.title}
@@ -95,7 +95,7 @@ export default function Projects() {
               </h4>
               <a
                 target="_blank"
-                className="hover:text-accent flex gap-1 underline underline-offset-2 transition-colors duration-300"
+                className="flex gap-1 underline underline-offset-2 transition-colors duration-300 hover:text-accent"
                 href={project.githubUrl}
               >
                 <GitHub fontSize="small" />
