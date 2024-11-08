@@ -30,11 +30,10 @@ export default function Header() {
         </div>
         <div>
           <p className="max-w-sm text-zinc-400">
-            I build <strong className="text-accent">responsive</strong>,{" "}
-            <strong className="text-accent">scalable</strong>, and
-            <strong className="text-accent"> user-focused</strong> web
-            applications with <strong className="text-accent">modern</strong>{" "}
-            full-stack technologies.
+            I build <strong className="text-accent">responsive</strong> and
+            <strong className="text-accent"> scalable</strong> web applications
+            with <strong className="text-accent">modern</strong> full-stack
+            technologies.
           </p>
         </div>
 
