@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <link rel="icon" href="/favicon.svg" sizes="any" />
       <body
-        className={`${inter.className} bg-zinc-900 antialiased`}
+        className={`${inter.className} bg-zinc-950 antialiased`}
         suppressHydrationWarning
       >
         <Analytics />
