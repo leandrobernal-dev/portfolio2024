@@ -19,8 +19,8 @@ const CustomCursor = () => {
   const outerCursorPosition = useRef({ x: 0, y: 0 }); // Outer cursor position
   const innerCursorPosition = useRef({ x: 0, y: 0 }); // Inner cursor position
 
-  const outerLagMultiplier = 0.05; // Lag multiplier for outer ring
-  const innerLagMultiplier = 0.1; // Faster lag for inner circle
+  const outerLagMultiplier = 0.1; // Lag multiplier for outer ring
+  const innerLagMultiplier = 0.2; // Faster lag for inner circle
 
   useEffect(() => {
     // Detect if the user is on a touch device
