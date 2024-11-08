@@ -37,7 +37,10 @@ export default function TechStack() {
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
         {technologies.map((tech) => (
-          <div key={tech.name} className="flex w-full gap-2 bg-zinc-800 p-4">
+          <div
+            key={tech.name}
+            className="bg flex w-full gap-2 rounded-lg bg-white/10 p-4"
+          >
             <tech.icon className={`text-3xl ${tech.color} `} />
             <span className="text-center text-xs text-gray-600 dark:text-gray-400">
               {tech.name}

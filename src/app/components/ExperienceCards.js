@@ -3,7 +3,7 @@ export default function ExperienceCards() {
     <section className="section relative flex flex-col gap-2" id="Experience">
       <h3 className="mb-2 font-bold text-white">EXPERIENCE</h3>
 
-      <article className="flex flex-col justify-between gap-4 bg-zinc-800 p-8 transition-transform duration-300 ease-in-out sm:flex-row md:p-8 md:hover:scale-110">
+      <article className="flex flex-col justify-between gap-4 rounded-lg bg-white/10 p-8 transition-transform duration-300 ease-in-out sm:flex-row md:p-8 md:hover:scale-110">
         <time className="min-w-fit text-zinc-400" dateTime="2022-01-01">
           2022 — Present
         </time>

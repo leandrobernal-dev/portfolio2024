@@ -76,7 +76,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <li
             key={index}
-            className={`group flex flex-col justify-between gap-8 bg-zinc-800 p-6 transition-all duration-300 md:aspect-square md:gap-0 md:hover:scale-110 ${
+            className={`group flex flex-col justify-between gap-8 rounded-lg bg-white/10 p-6 transition-all duration-300 md:aspect-square md:gap-0 md:hover:scale-110 ${
               index % 2 === 0 ? "md:-mt-12" : ""
             } ${hoveredId !== null && hoveredId !== project.id ? "md:opacity-30 md:blur-sm" : ""}`}
             onMouseEnter={() => setHoveredId(project.id)}
@@ -122,7 +122,7 @@ export default function Projects() {
               {project.techUsed.map((tech) => (
                 <li
                   key={tech}
-                  className="rounded-full bg-zinc-900 p-1 px-2 font-mono text-xs text-white shadow-md"
+                  className="rounded-full bg-[#030712] p-1 px-2 font-mono text-xs text-white shadow-md"
                 >
                   {tech}
                 </li>
