@@ -6,13 +6,21 @@ import styles from "../css/customCursor.module.css";
 const CustomCursor = () => {
   const [isTouchDevice, setIsTouchDevice] = useState(true); // Detect touch device
 
-  const [cursorSize, setCursorSize] = useState(20);
-  const cursorRef = useRef(null); // Ref for custom cursor
-  const mousePosition = useRef({ x: 0, y: 0 }); // Store mouse position
-  const cursorPosition = useRef({ x: 0, y: 0 }); // Store the custom cursor's position
+  const [outerCursorSize, setOuterCursorSize] = useState(50);
+  const [innerCursorSize, setInnerCursorSize] = useState(20); // Smaller size for inner circle
 
-  const lagMultiplier = 0.05; // Adjust the multiplier for more or less lag
-  const cursorSizeOffset = cursorSize / 2;
+  const outerCursorOffset = outerCursorSize / 2;
+  const innerCursorOffset = innerCursorSize / 2;
+
+  const outerCursorRef = useRef(null); // Ref for outer ring cursor
+  const innerCursorRef = useRef(null); // Ref for inner solid cursor
+
+  const mousePosition = useRef({ x: 0, y: 0 }); // Store mouse position
+  const outerCursorPosition = useRef({ x: 0, y: 0 }); // Outer cursor position
+  const innerCursorPosition = useRef({ x: 0, y: 0 }); // Inner cursor position
+
+  const outerLagMultiplier = 0.05; // Lag multiplier for outer ring
+  const innerLagMultiplier = 0.1; // Faster lag for inner circle
 
   useEffect(() => {
     // Detect if the user is on a touch device
@@ -23,37 +31,39 @@ const CustomCursor = () => {
       mousePosition.current = { x: e.clientX, y: e.clientY };
     };
 
-    // Hovering over a button or link
-    const handleMouseEnter = () => {
-      setCursorSize(50); // Change cursor size when hovering over clickable elements
-    };
-
-    // Leaving a button or link
-    const handleMouseLeave = () => {
-      setCursorSize(20); // Reset cursor size when not hovering over clickable elements
-    };
-
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Attach hover events to all clickable elements (buttons and links)
-    const clickableElements = document.querySelectorAll("button, a");
-    clickableElements.forEach((el) => {
-      el.addEventListener("mouseenter", handleMouseEnter);
-      el.addEventListener("mouseleave", handleMouseLeave);
-    });
-
     const animateCursor = () => {
-      const distX =
-        mousePosition.current.x - cursorPosition.current.x - cursorSizeOffset;
-      const distY =
-        mousePosition.current.y - cursorPosition.current.y - cursorSizeOffset;
+      const distXOuter =
+        mousePosition.current.x -
+        outerCursorPosition.current.x -
+        outerCursorOffset;
+      const distYOuter =
+        mousePosition.current.y -
+        outerCursorPosition.current.y -
+        outerCursorOffset;
 
-      // Lerp (linear interpolation) for smooth movement
-      cursorPosition.current.x += distX * lagMultiplier;
-      cursorPosition.current.y += distY * lagMultiplier;
+      const distXInner =
+        mousePosition.current.x -
+        innerCursorPosition.current.x -
+        innerCursorOffset;
+      const distYInner =
+        mousePosition.current.y -
+        innerCursorPosition.current.y -
+        innerCursorOffset;
 
-      if (cursorRef.current) {
-        cursorRef.current.style.transform = `translate(${cursorPosition.current.x}px, ${cursorPosition.current.y}px)`;
+      // Lerp (linear interpolation) for smooth movement with different delays
+      outerCursorPosition.current.x += distXOuter * outerLagMultiplier;
+      outerCursorPosition.current.y += distYOuter * outerLagMultiplier;
+      innerCursorPosition.current.x += distXInner * innerLagMultiplier;
+      innerCursorPosition.current.y += distYInner * innerLagMultiplier;
+
+      if (outerCursorRef.current) {
+        outerCursorRef.current.style.transform = `translate(${outerCursorPosition.current.x}px, ${outerCursorPosition.current.y}px)`;
+      }
+
+      if (innerCursorRef.current) {
+        innerCursorRef.current.style.transform = `translate(${innerCursorPosition.current.x}px, ${innerCursorPosition.current.y}px)`;
       }
 
       requestAnimationFrame(animateCursor);
@@ -64,16 +74,26 @@ const CustomCursor = () => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [outerCursorOffset, innerCursorOffset]);
 
   return (
     <>
       {!isTouchDevice && (
-        <div
-          ref={cursorRef}
-          className={styles.cursor}
-          style={{ width: cursorSize, height: cursorSize }}
-        />
+        <>
+          <div
+            ref={outerCursorRef}
+            className={styles.outerCursor}
+            style={{ width: outerCursorSize, height: outerCursorSize }}
+          />
+          <div
+            ref={innerCursorRef}
+            className={styles.innerCursor}
+            style={{
+              width: innerCursorSize,
+              height: innerCursorSize,
+            }}
+          />
+        </>
       )}
     </>
   );

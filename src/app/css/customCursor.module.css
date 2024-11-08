@@ -1,14 +1,24 @@
-/* Custom Cursor */
-.cursor {
-  background-color: #ffffff;
-  border-radius: 50%;
+.outerCursor {
   position: fixed;
+  top: 0;
+  left: 0;
+  border: 2px solid #ffffff; /* Creates the ring effect */
+  border-radius: 50%;
   pointer-events: none;
-  mix-blend-mode: difference; /* Invert effect */
-  z-index: 100;
+  mix-blend-mode: difference;
   transition:
     width 0.2s ease,
-    height 0.2s ease,
-    background-color 0.2s ease,
-    border-color 0.2s ease;
+    height 0.2s ease; /* Smooth resizing */
+  z-index: 100;
+}
+
+.innerCursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* Solid color for inner circle */
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 100;
 }
