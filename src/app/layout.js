@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import CustomCursor from "@/app/components/Cursor";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,11 +25,10 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <link rel="icon" href="/favicon.svg" sizes="any" />
       <body
-        className={`${inter.className} bg-[#030712] antialiased`}
+        className={`${inter.className} bg-[#030712] text-white antialiased`}
         suppressHydrationWarning
       >
         <Analytics />
-        <CustomCursor />
         {children}
       </body>
     </html>
