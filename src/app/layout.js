@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html lang="en" suppressHydrationWarning className="dark scroll-smooth">
       <link rel="icon" href="/favicon.svg" sizes="any" />
       <body
         className={`${inter.className} bg-[#030712] text-white antialiased`}
