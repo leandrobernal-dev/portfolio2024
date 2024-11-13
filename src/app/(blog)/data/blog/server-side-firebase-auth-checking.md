@@ -10,10 +10,40 @@ images: ['']
 
 ## Introduction
 
-In this guide, we will learn how to use Firebase Authentication to protect pages and API routes in your Next.js app. 
+This guide will explain how to use Firebase Authentication to secure pages and API routes in a Next.js application by implementing Server-Side Authentication with Firebase, using middleware for access control.
 
+- [Save cookies](#Save-cookies)
 - [Server Side Firebase Auth Checking](#Server-Side-Firebase-Auth-Checking)
 - [Protect API Routes with Middlewares](#Protect-API-Routes-with-Middleware)
+
+## Save cookies
+Saving the authentication token in a cookie lets your Next.js app handle authentication on both client and server sides. This ensures pages and API routes are securely accessible only to authenticated users.
+
+Add the cookie-saving logic in the AuthProvider's useEffect hook, where onIdTokenChanged updates the cookie whenever the token changes.
+
+```ts
+
+import { onAuthStateChanged, onIdTokenChanged, User } from "firebase/auth";
+
+export const AuthProvider = ({ children, defaultUser }: AuthProviderProps) => {
+    //...
+
+    useEffect(() => {
+        return onIdTokenChanged(auth, async (user) => {
+            if (!user) {
+            setUser(null);
+            setCookie(undefined, "token", "", { path: "/" });
+            } else {
+            const token = await user.getIdToken();
+            setUser(user);
+            setCookie(undefined, "token", token, { path: "/" });
+            }
+        });
+    }, []);
+
+    //...
+}
+```
 
 ## Server Side Firebase Auth Checking
 Create serverApp.ts to your project.
