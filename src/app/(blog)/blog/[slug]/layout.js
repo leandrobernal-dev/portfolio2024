@@ -1,8 +1,7 @@
 import { getPostData } from "@/app/(blog)/lib/post";
 
-export async function generateMetadata({ params, searchParams }, parent) {
+export async function generateMetadata({ params }) {
   const postData = await getPostData(params.slug);
-  console.log(postData);
 
   return {
     title: postData.title,
