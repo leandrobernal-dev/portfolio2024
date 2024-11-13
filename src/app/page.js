@@ -1,4 +1,5 @@
 import About from "@/app/components/About";
+import BlogSection from "@/app/components/Blog";
 import CustomCursor from "@/app/components/Cursor";
 import ExperienceCards from "@/app/components/ExperienceCards";
 import Footer from "@/app/components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
           <TechStack />
           <ProjectGrid />
           <ExperienceCards />
+          <BlogSection />
           <Footer />
         </main>
       </div>
