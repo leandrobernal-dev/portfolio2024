@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Blog | Leandro Bernal",
+  description:
+    "Straightforward Articles and Guides on My Favorite Technologies",
+};
+
 export default function BlogLayout({ children }) {
   return (
     <div className="min-h-screen text-white">
