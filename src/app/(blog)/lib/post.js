@@ -72,3 +72,8 @@ export async function getPostData(slug) {
     ...matterResult.data,
   };
 }
+
+export async function getLatestPosts(count = 2) {
+  const allPostsData = await getSortedPostsData();
+  return allPostsData.slice(0, count);
+}
