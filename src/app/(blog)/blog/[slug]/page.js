@@ -15,7 +15,7 @@ export default async function PostPage({ params }) {
           weekday: "long",
         })}
       </p>
-      <h1 className="mb-4 border-b border-gray-800 pb-8 text-center text-6xl font-bold">
+      <h1 className="mb-4 border-b border-gray-800 pb-8 text-center text-2xl font-bold sm:text-3xl lg:text-6xl">
         {postData.title}
       </h1>
 
