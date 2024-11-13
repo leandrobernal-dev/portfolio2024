@@ -50,7 +50,12 @@ export default async function BlogSection() {
               })}
             </p>
             <h3 className="text-2xl font-bold tracking-tight text-white">
-              {post.title}
+              <Link
+                href={`/blog/${post.slug}`}
+                className="underline hover:text-accent"
+              >
+                {post.title}
+              </Link>
             </h3>
             <p className="text-[#a0aec0]">{post.summary}</p>
           </div>
