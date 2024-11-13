@@ -22,13 +22,10 @@ export default function BlogLayout({ children }) {
                 <Link href="/blog" className="hover:text-gray-300">
                   Blog
                 </Link>
-                <Link href="/tags" className="hover:text-gray-300">
-                  Tags
-                </Link>
-                <Link href="/projects" className="hover:text-gray-300">
+                <Link href="/#Projects" className="hover:text-gray-300">
                   Projects
                 </Link>
-                <Link href="/about" className="hover:text-gray-300">
+                <Link href="/blog/about" className="hover:text-gray-300">
                   About
                 </Link>
               </div>
