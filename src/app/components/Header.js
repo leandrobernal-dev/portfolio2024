@@ -14,18 +14,20 @@ export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:max-h-[800px] lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div className="space-y-4">
-        <div>
+        <div className="space-y-3">
           <h1 className="text-5xl font-black">
             <Link href={"/"}>
               Leandro Bernal<span className="text-accent">.</span>
             </Link>
           </h1>
-          <h2 className="text-xl font-semibold">Full Stack Web Developer</h2>
-          <div className="flex items-end">
-            <strong>
-              <Place fontSize="small" className="p-0" />
-            </strong>
-            <span className="text-sm text-accent">Philippines</span>
+          <div>
+            <h2 className="text-xl font-semibold">Full Stack Web Developer</h2>
+            <div className="flex items-end">
+              <strong>
+                <Place fontSize="small" className="p-0" />
+              </strong>
+              <span className="text-sm text-accent">Philippines</span>
+            </div>
           </div>
         </div>
         <div>
