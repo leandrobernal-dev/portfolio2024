@@ -44,6 +44,28 @@ const projects = [
     ],
   },
   {
+    id: 5,
+    title: "MusicViewr",
+    shortDescription: "Sheet Music Viewer",
+    description:
+      "A lightweight web app for viewing and managing PDF sheet music, designed for musicians and music enthusiasts.",
+    imageUrl: "/musicviewr.png",
+    githubUrl: "https://github.com/leandrobernal-dev/musicviewr",
+    demoUrl: "https://musicviewr.vercel.app/",
+    techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
+  },
+  {
+    id: 6,
+    title: "WattWise",
+    shortDescription: "Solar Panel Calculator",
+    description:
+      "WattWise is a user-friendly web app designed to help you plan your solar power system.",
+    imageUrl: "/wattwise.png",
+    githubUrl: "https://github.com/leandrobernal-dev/WattWise",
+    demoUrl: "https://watt-wise-xi.vercel.app/",
+    techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
+  },
+  {
     id: 3,
     title: "FakePost",
     shortDescription: "Chat Meme Generator",
