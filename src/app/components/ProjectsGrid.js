@@ -25,6 +25,17 @@ const projects = [
     ],
   },
   {
+    id: 5,
+    title: "MusicViewr",
+    shortDescription: "Sheet Music Viewer",
+    description:
+      "A lightweight web app for viewing and managing PDF sheet music, designed for musicians and music enthusiasts.",
+    imageUrl: "/musicviewr.png",
+    githubUrl: "https://github.com/leandrobernal-dev/musicviewr",
+    demoUrl: "https://musicviewr.vercel.app/",
+    techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
+  },
+  {
     id: 2,
     title: "Ref Online",
     shortDescription: "Reference Canvas board for Designers",
@@ -44,15 +55,15 @@ const projects = [
     ],
   },
   {
-    id: 5,
-    title: "MusicViewr",
-    shortDescription: "Sheet Music Viewer",
+    id: 3,
+    title: "FakePost",
+    shortDescription: "Chat Meme Generator",
     description:
-      "A lightweight web app for viewing and managing PDF sheet music, designed for musicians and music enthusiasts.",
-    imageUrl: "/musicviewr.png",
-    githubUrl: "https://github.com/leandrobernal-dev/musicviewr",
-    demoUrl: "https://musicviewr.vercel.app/",
-    techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
+      "Generate realistic funny chat screenshots from popular messaging platforms like WhatsApp, iMessage, and Facebook Messenger.",
+    imageUrl: "/fakepost.jpg",
+    githubUrl: "https://github.com/leandrobernal-dev/fakepost",
+    demoUrl: "https://fakepost.vercel.app/create",
+    techUsed: ["Next.js", "Tailwind CSS", "Javascript"],
   },
   {
     id: 6,
@@ -64,17 +75,6 @@ const projects = [
     githubUrl: "https://github.com/leandrobernal-dev/WattWise",
     demoUrl: "https://watt-wise-xi.vercel.app/",
     techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
-  },
-  {
-    id: 3,
-    title: "FakePost",
-    shortDescription: "Chat Meme Generator",
-    description:
-      "Generate realistic funny chat screenshots from popular messaging platforms like WhatsApp, iMessage, and Facebook Messenger.",
-    imageUrl: "/fakepost.jpg",
-    githubUrl: "https://github.com/leandrobernal-dev/fakepost",
-    demoUrl: "https://fakepost.vercel.app/create",
-    techUsed: ["Next.js", "Tailwind CSS", "Javascript"],
   },
   {
     id: 4,
