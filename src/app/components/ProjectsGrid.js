@@ -25,6 +25,17 @@ const projects = [
     ],
   },
   {
+    id: 7,
+    title: "ResumeGen",
+    shortDescription: "Resume Generator",
+    description:
+      "ResumeGen is a user-friendly web app designed to help you create a professional resume in seconds.",
+    imageUrl: "/resumegenerator.png",
+    githubUrl: "https://github.com/leandrobernal-dev/resumeGen",
+    demoUrl: "https://resumegen.openideax.com/",
+    techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
+  },
+  {
     id: 5,
     title: "MusicViewr",
     shortDescription: "Sheet Music Viewer",
@@ -65,17 +76,7 @@ const projects = [
     demoUrl: "https://fakepost.vercel.app/create",
     techUsed: ["Next.js", "Tailwind CSS", "Javascript"],
   },
-  {
-    id: 6,
-    title: "WattWise",
-    shortDescription: "Solar Panel Calculator",
-    description:
-      "WattWise is a user-friendly web app designed to help you plan your solar power system.",
-    imageUrl: "/wattwise.png",
-    githubUrl: "https://github.com/leandrobernal-dev/WattWise",
-    demoUrl: "https://watt-wise-xi.vercel.app/",
-    techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
-  },
+
   {
     id: 4,
     title: "Portfolio Website",
