@@ -23,10 +23,7 @@ export async function getSortedPostsData() {
     // Combine the data with the id
     return {
       id,
-      slug: matterResult.data.title
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, ""),
+      slug: id,
       ...matterResult.data,
     };
   });
