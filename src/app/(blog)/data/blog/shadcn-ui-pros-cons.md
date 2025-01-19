@@ -34,5 +34,3 @@ Shadcn UI is a promising UI component library with a lot of potential. Its moder
 If you're looking for a fresh and modern alternative to traditional UI libraries, I highly recommend giving Shadcn UI a try. You might just find it to be the perfect fit for your next project.
 
 **Disclaimer:** This is just my personal opinion, and your experience may vary.
-
-I hope this blog post is helpful! Let me know if you have any other questions.
