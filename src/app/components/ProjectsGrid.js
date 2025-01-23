@@ -26,13 +26,13 @@ const projects = [
   },
   {
     id: 7,
-    title: "ResumeGen",
+    title: "topRes",
     shortDescription: "Resume Generator",
     description:
-      "ResumeGen is a user-friendly web app designed to help you create a professional resume in seconds.",
+      "topRes is a user-friendly web app designed to help you create a professional resume in seconds.",
     imageUrl: "/resumegenerator.png",
     githubUrl: "https://github.com/leandrobernal-dev/resumeGen",
-    demoUrl: "https://resumegen.openideax.com/",
+    demoUrl: "https://topres.openideax.com/",
     techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
   },
   {
