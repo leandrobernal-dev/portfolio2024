@@ -6,6 +6,17 @@ import { useState } from "react";
 
 const projects = [
   {
+    id: 7,
+    title: "topRes",
+    shortDescription: "Resume Generator",
+    description:
+      "topRes is a user-friendly web app designed to help you create a professional resume in seconds.",
+    imageUrl: "/resumegenerator.png",
+    githubUrl: "https://github.com/leandrobernal-dev/resumeGen",
+    demoUrl: "https://topres.openideax.com/",
+    techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
+  },
+  {
     id: 1,
     title: "InstaViewer",
     shortDescription: "Anonymous Instagram Stories Viewer",
@@ -23,17 +34,6 @@ const projects = [
       "Tailwind CSS",
       "Javascript",
     ],
-  },
-  {
-    id: 7,
-    title: "topRes",
-    shortDescription: "Resume Generator",
-    description:
-      "topRes is a user-friendly web app designed to help you create a professional resume in seconds.",
-    imageUrl: "/resumegenerator.png",
-    githubUrl: "https://github.com/leandrobernal-dev/resumeGen",
-    demoUrl: "https://topres.openideax.com/",
-    techUsed: ["Next.js", "Tailwind CSS", "Typescript", "Javascript"],
   },
   {
     id: 5,
